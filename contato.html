@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link real="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class= "corpocontato">
     <ul>
         <li>
             <a href="index.html"> Home </a>
@@ -21,18 +21,18 @@
         <div>  <h2>Compartilhe sua poesia: </h2>
             <form>
                 <label for="nome">Nome:</label>
-                <input type="text" id=nome>
-                <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id='txtNome'></div>
                 <br>
                 <label for="email">Email:</label>
-                <input type="email" id=email>
-                <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id= 'txtEmail'></div>
                 <br>
                 <label for="assunto">Assunto:</label>
-                <textarea name="assunto" id= "assunto" cols="30" rows="5"></textarea>
+                <textarea name="assunto" id="assunto" cols="30" rows="5" onkeyup="validaAssunto"></textarea>
+                <div id= 'Assunto'></div>
                 <br>
-                <br>
-                <button>Enviar</button>
+                <button onclick="enviar">Enviar</button>
             </form>
         </div>
         
@@ -42,10 +42,12 @@
     <p>Rio de Janeiro - RJ</p>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7347.311798797868!2d-43.17404137502245!3d-22.96289643993308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99800118734fa9%3A0x15f8ab20507745cd!2sApartamento%20Gustavo%20Sampaio!5e0!3m2!1spt-BR!2sbr!4v1634750815895!5m2!1spt-BR!2sbr" 
-    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-        </div>
-    
-    
+    width="400" height="250"  style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()"
+    id='mapa'></iframe>
+    </div>
+    </footer>
 </body>
+<script src="assets/js/script.js">
+
+</script>
 </html>

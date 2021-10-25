@@ -36,7 +36,7 @@
         width: 400px;
         height: 400px;
     }
-    .tamanho-social{
+    .tm-social{
         width: 30px;
         height: 30px;
     }
@@ -56,3 +56,12 @@
    .botao:hover{
     background-color:salmon;
 }
+   .corpocontato{
+    position: absolute;
+
+   }
+    .corpocontato{
+        
+        align-items: center;
+    }
+   
